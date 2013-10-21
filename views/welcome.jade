@@ -1,0 +1,39 @@
+div#welcomebox
+  div#registerbox
+    h2 Register!
+    b Want to try Retwis? Create an account!
+    form(method='post', action='/Signup')
+      table
+        tr
+          td Username
+          td 
+            input(type='text', name='username')
+        tr
+          td Password
+          td
+            input(type='password', name='password')
+        tr
+          td EmailAdress
+          td
+            input(type='text', name='email')
+        tr
+          td(colspan='2', align='right')
+            input(type='submit', name='doit', value='Create an account')
+
+    h2 Already registered? Login here
+    form(method='post', action='/Login')
+      table
+        tr
+          td Username
+          td
+            input(type='text', name='username')
+        tr
+          td Password
+          td
+            input(type='password', name='password')
+        tr
+          td(colspan='2', align='right')
+            input(type='submit', name='doit', value='Login')
+
+
+

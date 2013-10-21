@@ -1,0 +1,11 @@
+div#postform
+    form(method='post', action='/posttweet')
+        p #{username}, what you are doing?
+        table
+            tr
+                td
+                    textarea(cols='70', rows='3', name='status')
+            tr
+                td(align='right')
+                    input(type='submit', name='doit', value='Update')
+
